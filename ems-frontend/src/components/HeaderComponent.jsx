@@ -6,7 +6,7 @@ const HeaderComponent = () => {
     <div>
         <header>
             <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
-                <a className="navbar-brand" href="https://wwww.javaguides.net">Employee Management System</a>
+                <a className="navbar-brand" href="https://wwww.ems.net">Employee Management System</a>
 
                 <div className="collapse navbar-collapse" id="navbarNav">
                   <ul className="navbar-nav">
