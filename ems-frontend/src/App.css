@@ -1,18 +1,32 @@
-.footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    background-color: black;
-    color: white;
-    text-align: center;
+/* 
+  App.css — kept minimal.
+  All global styles and Tailwind tokens are in index.css.
+  Legacy styles (footer, Add-btn) are preserved below 
+  in case the existing ListEmployee/Department components still reference them.
+*/
 
-}
-.Add-btn{
-    padding: 10px;
-    border: solid;
-    border-radius: 10px;
-    background-color: black;
-    color: white;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #0b1120;
+  color: #94a3b8;
+  text-align: center;
 }
 
+.Add-btn {
+  padding: 10px 20px;
+  border: 1px solid rgba(124, 58, 237, 0.4);
+  border-radius: 10px;
+  background: rgba(124, 58, 237, 0.15);
+  color: #a78bfa;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.Add-btn:hover {
+  background: rgba(124, 58, 237, 0.25);
+  border-color: rgba(124, 58, 237, 0.6);
+}

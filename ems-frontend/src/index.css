@@ -1,1 +1,36 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
+/* ── Custom Tailwind theme tokens (v4 CSS-based config) ─────────────── */
+@theme {
+  --color-primary:   #7c3aed;
+  --color-surface:   #080d1a;
+  --color-card:      #111827;
+  --color-card-border: #1e2d45;
+  --color-accent:    #a78bfa;
+
+  --font-family-inter: 'Inter', sans-serif;
+}
+
+/* ── Global resets ────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #080d1a;
+  color: #e2e8f0;
+  overflow-x: hidden;
+}
+
+/* ── Custom scrollbar ─────────────────────────────────────────────────── */
+::-webkit-scrollbar        { width: 6px; }
+::-webkit-scrollbar-track  { background: #0f172a; }
+::-webkit-scrollbar-thumb  { background: #7c3aed; border-radius: 3px; }
+
+/* ── Recharts override for dark bg ──────────────────────────────────── */
+.recharts-legend-item-text { color: #94a3b8 !important; font-size: 12px; }
+.recharts-default-legend   { padding-top: 12px !important; }
